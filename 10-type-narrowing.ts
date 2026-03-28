@@ -1,4 +1,4 @@
-const inputEl = document.getElementById('user-name')
+const inputEl = document.getElementById('user-name') as HTMLInputElement
 
 console.log(inputEl.value) // This line is unsafe because inputEl might be null
 
