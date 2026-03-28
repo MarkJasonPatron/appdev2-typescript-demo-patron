@@ -7,7 +7,7 @@ a = null
 let b: null | string
 
 b = null
-b = "Hi"
+b = "Mambo"
 // b = 10
 
 // Special Type - undefined
@@ -20,6 +20,8 @@ c = undefined
 let d: undefined | string
 
 d = undefined
-d = "Hi"
+d = "19"
 // d = null
 // d = 10
+
+console.log(a, b, c, d)
