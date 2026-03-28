@@ -1,7 +1,7 @@
 (() => {
     // Type Aliases or Custom Types
     // use `type` keyword to create custom type
-    type Role = 'admin' | 'guess' | 'teacher' | 'student'
+    type Role = 'admin' | 'guess' | 'teacher' | 'student' | 'friend'
 
     // Complex Object Type Definition
     type User = {
@@ -18,4 +18,13 @@
     function access(role: Role) {
         // ...
     }
+
+    function anotherAccess(role: Role) {
+        // ...
+    }
+
+    access('teacher')
+    anotherAccess('friend')
+
+    console.log(userRole)
 })
