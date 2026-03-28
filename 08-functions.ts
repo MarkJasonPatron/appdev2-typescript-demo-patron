@@ -1,11 +1,9 @@
-(() => {
-
-    // Function Return Value Types
+// Function Return Value Types
     function add(a: number, b: number): number { // you can omit the function type since typescript can infers it
         return a + b
     }
 
-    add(5, 10)
+    add(10, 9)
     // add("5", 10)
 
     // Special Type `void` - return nothing
@@ -14,7 +12,7 @@
         console.log(message)
     }
 
-    log("Hello, World!")
+    log("Malunggay Pandesal")
 
     // Another Special Type `never`
     // Function never finishes normally (throws error, infinite loop)
@@ -30,7 +28,7 @@
     // () => void - function type
     function performJob(cb: (m: string) => void) {  // you can also use cb: Function but () => void is the best practice
         // ...
-        cb('Job Done!')
+        cb('Job Application!')
     }
 
     let logMsg = (msg: string): void => {
@@ -46,17 +44,16 @@
         greet: () => string;
     }
 
-    let user: User = {
-        name: "Elmer",
-        age: 39,
+    let anotherUser: User = {
+        name: "Mark",
+        age: 21,
         // greet: function() {
         //     return this.name
         // }
         greet() {
-            console.log(`Hello, ${this.name}`)
-            return this.name
+            console.log(`Hello, ${this.name} ${this.age}`)
+            return this.name + this.age
         }
     }
 
-    user.greet()
-})
+    anotherUser.greet()
